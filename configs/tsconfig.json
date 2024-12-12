@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+      "lib": ["ESNext"],
+      "module": "ESNext",
+      "target": "ESNext",
+      "rootDir": "packages",
+      "outDir": "./dist",
+      "types": ["node"],
+      "moduleResolution": "node",
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "removeComments": true,
+      "declaration": true,
+      "declarationMap": false,
+      "noImplicitAny": true,
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,
+      "forceConsistentCasingInFileNames": true,
+      "resolveJsonModule": true,
+      "sourceMap": true,
+      "strictNullChecks": true,
+      "strictFunctionTypes": true,
+      "strictBindCallApply": true,
+      "strictPropertyInitialization": false,
+      "noImplicitThis": true,
+      "alwaysStrict": true,
+  },
+  "include": [
+    "packages",
+    "packages/**/package.json",
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "root",
+  "version": "1.0.0",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xaaxaax/monorepo-template.git"
+  },
+  "scripts": {
+    "nx": "nx",
+    "nx:test:all": "nx run-many --target=test --skip-nx-cache",
+    "nx:build:all": "nx run-many --target=build --skip-nx-cache",
+    "nx:version:all": "nx release --yes",
+    "affected:test": "nx affected --target=test --parallel=3",
+    "affected:build": "nx affected --target=build --parallel=3"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nx/js": "^20.2.1",
+    "@types/node": "^22.10.1",
+    "esbuild": "^0.24.0",
+    "nx": "^20.2.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.17.0"
+  }
+}

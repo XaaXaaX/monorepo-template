@@ -1,0 +1,27 @@
+{
+  "name": "@xaaxaax/package-b",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "source": "index.ts",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xaaxaax/monorepo-template.git",
+    "directory": "packages/package-b"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "scripts": {
+    "build": "pnpm run build:esbuild && pnpm run build:tsc",
+    "build:tsc": "tsc --emitDeclarationOnly --declaration",
+    "build:esbuild": "esbuild index.ts --bundle --minify --sourcemap --outdir=./dist  --allow-overwrite"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

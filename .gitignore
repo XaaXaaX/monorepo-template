@@ -1,0 +1,21 @@
+# git related
+.git
+
+# Dev and CI 
+.vs
+.DS_Store
+.scannerwork
+.nx
+
+node_modules
+cdk.out
+
+# Testing
+coverage
+reports
+
+# Build
+bin
+dist
+build
+bin
