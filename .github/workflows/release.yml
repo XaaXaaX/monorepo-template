@@ -30,13 +30,13 @@ jobs:
           node-version: '22.x'
           cache: pnpm
           registry-url: 'https://npm.pkg.github.com'
-          scope: '@insight-path'
+          scope: '@xaaxaax'
       
       - name: Git Identity
         shell: bash
         run: |
           git config --global user.name 'operations'
-          git config --global user.email 'operations@insightspath.fr'
+          git config --global user.email 'operations@xaaxaax.fr'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

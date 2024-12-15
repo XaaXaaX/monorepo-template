@@ -10,7 +10,7 @@
     "nx": "nx",
     "nx:test:all": "nx run-many --target=test --skip-nx-cache",
     "nx:build:all": "nx run-many --target=build --skip-nx-cache",
-    "nx:version:all": "nx release --yes",
+    "nx:version:all": "nx release --skip-publish",
     "affected:test": "nx affected --target=test --parallel=3",
     "affected:build": "nx affected --target=build --parallel=3"
   },
